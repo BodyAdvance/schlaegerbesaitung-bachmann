@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professionelle Schlägerbesaitung für Tennis, Squash und Badminton in Sömmerda. Saiten, Zubehör, Reparatur und Vermietung des KI-Tennisroboters Acemate S10.">
+  <title>Schlägerbesaitung André Bachmann | Sömmerda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" role="navigation" aria-label="Hauptnavigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Schlägerbesaitung André Bachmann – Startseite">
+        <img src="images/logo.png" alt="Schlägerbesaitung André Bachmann Logo">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#leistungen" class="nav-link">Leistungen</a></li>
+        <li><a href="#diagnosecenter" class="nav-link">Diagnostik</a></li>
+        <li><a href="#acemate" class="nav-link">Ballmaschinen-Vermietung</a></li>
+        <li><a href="#ueber-uns" class="nav-link">Über mich</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="preisliste.html" class="nav-link">Preisliste</a></li>
+        <li><a href="#kontakt" class="nav-link btn btn-primary nav-cta">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" aria-label="Willkommen">
+    <!-- Animated beams canvas -->
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+    <!-- Top/bottom fade overlay -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <!-- Badge -->
+        <div class="hero-badge" id="heroBadge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          <span>Professionelle Schlägerbesaitung</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="hero-title" id="heroTitle">
+          <span class="hero-line-1">Dein Schläger.</span>
+          <span class="hero-line-2">Unser Handwerk.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle" id="heroSubtitle">
+          Tennis, Squash und Badminton — besaitet mit Präzision und Leidenschaft. Direkt in Sömmerda.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-actions" id="heroActions">
+          <div class="btn-glass-wrap">
+            <a href="#kontakt" class="btn-glass">
+              <span>Jetzt anfragen</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+          <a href="#leistungen" class="btn btn-ghost">Unsere Leistungen</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== LEISTUNGEN ===== -->
+  <section id="leistungen" class="section" aria-labelledby="leistungen-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Was wir bieten</span>
+        <h2 id="leistungen-heading">Unsere Leistungen</h2>
+        <p>Von der professionellen Besaitung bis zur Reparatur — alles aus einer Hand.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Besaitung -->
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <line x1="5" y1="5" x2="23" y2="5"/>
+              <line x1="5" y1="10" x2="23" y2="10"/>
+              <line x1="5" y1="15" x2="23" y2="15"/>
+              <line x1="5" y1="20" x2="23" y2="20"/>
+              <line x1="8" y1="3" x2="8" y2="22"/>
+              <line x1="13" y1="3" x2="13" y2="22"/>
+              <line x1="18" y1="3" x2="18" y2="22"/>
+              <line x1="23" y1="3" x2="23" y2="22"/>
+            </svg>
+          </div>
+          <h3>Schlägerbesaitung</h3>
+          <p>Professionelle Besaitung für Tennis-, Squash- und Badmintonschläger. Individuelle Beratung zur optimalen Saite und Spannung für dein Spielniveau.</p>
+        </article>
+
+        <!-- Verkauf -->
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h3l2.5 12h11l2.5-8H9"/>
+              <circle cx="11" cy="21" r="1.5" fill="currentColor" stroke="none"/>
+              <circle cx="19" cy="21" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Saiten &amp; Zubehör</h3>
+          <p>Hochwertige Saiten von führenden Marken — Polyester, Naturdar, Nylon und Hybrid. Dazu Griffe, Dämpfer und weiteres Zubehör.</p>
+        </article>
+
+        <!-- Reparatur -->
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 4a4 4 0 0 0-4 4c0 .6.1 1.1.3 1.6L4.7 21.2a1 1 0 0 0 0 1.4l1.4 1.4a1 1 0 0 0 1.4 0L19 12.2c.5.2 1 .3 1.6.3a4 4 0 0 0 0-8z"/>
+            </svg>
+          </div>
+          <h3>Schlägerreparatur</h3>
+          <p>Gebrochener Rahmen, defekter Griff oder beschädigte Bespannung? Wir reparieren deinen Schläger fachgerecht und schnell.</p>
+        </article>
+
+        <!-- Ballmaschine -->
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="10" width="22" height="13" rx="3"/>
+              <circle cx="14" cy="16.5" r="3.5"/>
+              <path d="M8 10V7a6 6 0 0 1 12 0v3"/>
+              <circle cx="14" cy="16.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Ballmaschinen-Vermietung</h3>
+          <p>Trainiere wie ein Profi mit dem KI-Tennisroboter Acemate S10. Stundenweise oder tageweise Vermietung — für alle Spielstärken.</p>
+          <span class="service-badge">Acemate S10</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHLÄGER-TYPEN ===== -->
+  <section id="schlaeger" class="section section--subtle" aria-labelledby="schlaeger-heading">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;">
+        <span class="section-label">Unsere Spezialgebiete</span>
+        <h2 id="schlaeger-heading">Für jeden Sport</h2>
+        <p style="margin: var(--space-sm) auto 0; text-align:center;">Ob Tennisprofi, Squashspieler oder Federball-Fan — wir besaiten jeden Schläger.</p>
+      </div>
+
+      <div class="sport-grid">
+        <!-- Tennis -->
+        <div class="sport-item reveal">
+          <div class="sport-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <!-- Racket head -->
+              <ellipse cx="38" cy="32" rx="22" ry="28"/>
+              <!-- Handle -->
+              <line x1="38" y1="60" x2="38" y2="76"/>
+              <rect x="33" y="72" width="10" height="5" rx="2"/>
+              <!-- Strings horizontal -->
+              <line x1="17" y1="24" x2="59" y2="24"/>
+              <line x1="16" y1="32" x2="60" y2="32"/>
+              <line x1="17" y1="40" x2="59" y2="40"/>
+              <!-- Strings vertical -->
+              <line x1="30" y1="5" x2="30" y2="59"/>
+              <line x1="38" y1="4" x2="38" y2="60"/>
+              <line x1="46" y1="5" x2="46" y2="59"/>
+            </svg>
+          </div>
+          <h3>Tennis</h3>
+          <p>Polyester, Naturdarmsaite, Hybrid — abgestimmt auf deinen Spielstil</p>
+        </div>
+
+        <!-- Squash -->
+        <div class="sport-item reveal">
+          <div class="sport-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <!-- Smaller, rounder racket head -->
+              <ellipse cx="38" cy="28" rx="18" ry="22"/>
+              <!-- Longer handle -->
+              <line x1="38" y1="50" x2="38" y2="75"/>
+              <rect x="33" y="71" width="10" height="5" rx="2"/>
+              <!-- Strings horizontal -->
+              <line x1="21" y1="22" x2="55" y2="22"/>
+              <line x1="20" y1="28" x2="56" y2="28"/>
+              <line x1="21" y1="34" x2="55" y2="34"/>
+              <!-- Strings vertical -->
+              <line x1="30" y1="7" x2="30" y2="50"/>
+              <line x1="38" y1="6" x2="38" y2="50"/>
+              <line x1="46" y1="7" x2="46" y2="50"/>
+            </svg>
+          </div>
+          <h3>Squash</h3>
+          <p>Dünne Besaitung mit hoher Kontrolle und optimaler Rückmeldung</p>
+        </div>
+
+        <!-- Badminton -->
+        <div class="sport-item reveal">
+          <div class="sport-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <!-- Racket head (oval) -->
+              <ellipse cx="38" cy="25" rx="16" ry="20"/>
+              <!-- Handle with grip -->
+              <line x1="38" y1="45" x2="38" y2="72"/>
+              <rect x="33" y="68" width="10" height="5" rx="2"/>
+              <!-- Light strings -->
+              <line x1="23" y1="20" x2="53" y2="20"/>
+              <line x1="22" y1="25" x2="54" y2="25"/>
+              <line x1="23" y1="30" x2="53" y2="30"/>
+              <line x1="30" y1="6" x2="30" y2="45"/>
+              <line x1="38" y1="5" x2="38" y2="45"/>
+              <line x1="46" y1="6" x2="46" y2="45"/>
+            </svg>
+          </div>
+          <h3>Badminton</h3>
+          <p>Dünne Multifilament-Saiten für maximalen Federball-Kontakt und Gefühl</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DAS HERZ DES SCHLÄGERS ===== -->
+  <section id="herz" class="section section--elevated" aria-labelledby="herz-heading">
+    <div class="container">
+      <div class="herz-grid">
+        <div class="herz-text reveal-left">
+          <span class="section-label">Wissen</span>
+          <h2 id="herz-heading">Das Herz des Schlägers</h2>
+          <p>Viele Spieler geben viel Geld für einen „Top-Schläger" aus, schenken aber der Auswahl der Tennissaite kaum Beachtung. Die Bedeutung der richtigen Saite wird unterschätzt — dabei kommt nur die Tennissaite in Kontakt mit dem Ball und bestimmt maßgeblich die Ballkontrolle, Power und den Spin.</p>
+          <p class="herz-p2">Fest steht: Der teuerste Tennisschläger bringt nichts, wenn die Saite nicht passt. Zur Auswahl der idealen Saite sind grundsätzliche Informationen hilfreich. Neben den spezifischen Eigenschaften einer bestimmten Saite gibt es weitere Zusammenhänge, die das Saitenverhalten beeinflussen und sich teilweise gegenseitig ausschließen — zum Beispiel verschleißen Power-Saiten schneller, Spin-Saiten haben weniger Power.</p>
+          <a href="#kontakt" class="btn btn-primary" style="margin-top:var(--space-md);">Persönliche Beratung anfragen</a>
+        </div>
+        <div class="herz-facts reveal-right">
+          <div class="herz-fact-card">
+            <div class="herz-fact-icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="14" cy="14" r="11"/><path d="M14 9v5l3 3"/></svg>
+            </div>
+            <h4>Kontrolle</h4>
+            <p>Die Saite steuert, wie präzise du den Ball platzieren kannst — unabhängig vom Schlägermodell.</p>
+          </div>
+          <div class="herz-fact-card">
+            <div class="herz-fact-icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 14h18M19 10l4 4-4 4"/></svg>
+            </div>
+            <h4>Power</h4>
+            <p>Weichere Saiten mit niedrigerer Spannung erzeugen mehr Energie-Rückgabe und damit mehr Ballgeschwindigkeit.</p>
+          </div>
+          <div class="herz-fact-card">
+            <div class="herz-fact-icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 21C7 21 14 4 21 7"/><circle cx="14" cy="14" r="3"/></svg>
+            </div>
+            <h4>Spin</h4>
+            <p>Kantige Polyester-Saiten greifen den Ball besser — für mehr Topspin und Slice. Ideal für offensive Grundlinienspieler.</p>
+          </div>
+          <div class="herz-fact-card">
+            <div class="herz-fact-icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 3v22M7 10l7-7 7 7"/></svg>
+            </div>
+            <h4>Haltbarkeit</h4>
+            <p>Power-Saiten verschleißen schneller. Monofilament-Polyester hält länger, verliert aber früher seine Elastizität.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACEMATE S10 ===== -->
+  <section id="acemate" class="section" aria-labelledby="acemate-heading">
+    <div class="container">
+      <div class="acemate-grid">
+        <div class="acemate-content reveal-left">
+          <div class="acemate-badge" aria-label="KI Tennisroboter">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <circle cx="7" cy="7" r="5.5"/>
+              <path d="M5 7l1.5 1.5L9 5"/>
+            </svg>
+            KI Tennisroboter
+          </div>
+          <h2 id="acemate-heading">Ballmaschinen-Vermietung</h2>
+          <p>Trainiere wie ein Profi — mit dem intelligenten Ballwurfroboter der neuesten Generation. Perfekt für Einzel- und Gruppentraining auf jedem Niveau.</p>
+
+          <ul class="feature-list" aria-label="Funktionen des Acemate S10">
+            <li>
+              <svg class="feature-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="10" cy="10" r="9"/>
+                <path d="M6 10l3 3 5-5"/>
+              </svg>
+              KI-gesteuertes Ballwurfprogramm mit über 40 Trainingsszenarien
+            </li>
+            <li>
+              <svg class="feature-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="10" cy="10" r="9"/>
+                <path d="M6 10l3 3 5-5"/>
+              </svg>
+              Bis zu 120 Bälle Kapazität — stundenlanges Training ohne Unterbrechung
+            </li>
+            <li>
+              <svg class="feature-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="10" cy="10" r="9"/>
+                <path d="M6 10l3 3 5-5"/>
+              </svg>
+              Präzise Spin-, Tempo- und Winkelsteuerung per Smartphone-App
+            </li>
+            <li>
+              <svg class="feature-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="10" cy="10" r="9"/>
+                <path d="M6 10l3 3 5-5"/>
+              </svg>
+              Kompatibel mit iOS und Android
+            </li>
+            <li>
+              <svg class="feature-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="10" cy="10" r="9"/>
+                <path d="M6 10l3 3 5-5"/>
+              </svg>
+              Ideal für Einzeltraining, Gruppen und Coaching-Sessions
+            </li>
+            <li>
+              <svg class="feature-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="10" cy="10" r="9"/>
+                <path d="M6 10l3 3 5-5"/>
+              </svg>
+              Stundenweise oder tageweise Vermietung verfügbar
+            </li>
+          </ul>
+
+          <a href="#kontakt" class="btn btn-yellow">Jetzt mieten</a>
+        </div>
+
+        <div class="acemate-image-wrap reveal-right">
+          <img src="images/acemate.png" alt="KI Tennisroboter Acemate S10 auf dem Tennisplatz" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIAGNOSECENTER ===== -->
+  <section id="diagnosecenter" class="section section--subtle" aria-labelledby="diag-heading">
+    <div class="container">
+      <div class="diag-grid">
+        <div class="diag-device reveal-left">
+          <div class="diag-device-inner">
+            <img src="images/head-diagnostic.jpeg" alt="HEAD Racket Diagnostics Besaitungsmaschine" loading="lazy" style="width:100%;border-radius:var(--radius-md);display:block;">
+          </div>
+        </div>
+        <div class="diag-content reveal-right">
+          <span class="section-label">Diagnosecenter</span>
+          <h2 id="diag-heading">Präzision beginnt<br>mit der Messung.</h2>
+          <p>Mit unserem professionellen HEAD Diagnosecenter vermessen wir deinen Schläger auf vier entscheidende Parameter — für eine noch gezieltere Besaitungsempfehlung.</p>
+          <div class="diag-stats">
+            <div class="diag-stat">
+              <span class="diag-stat-label">Total Weight</span>
+              <span class="diag-stat-desc">Gesamtgewicht des Schlägers in Gramm</span>
+            </div>
+            <div class="diag-stat">
+              <span class="diag-stat-label">Swing Weight</span>
+              <span class="diag-stat-desc">Widerstand beim Schwingen — beeinflusst Kraft &amp; Kontrolle</span>
+            </div>
+            <div class="diag-stat">
+              <span class="diag-stat-label">Twist Weight</span>
+              <span class="diag-stat-desc">Stabilität bei außermittigen Treffern</span>
+            </div>
+            <div class="diag-stat">
+              <span class="diag-stat-label">Balance</span>
+              <span class="diag-stat-desc">Gleichgewichtspunkt — kopf- oder grifflastig</span>
+            </div>
+          </div>
+          <a href="#kontakt" class="btn btn-primary" style="margin-top:var(--space-md);">Schläger analysieren lassen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ÜBER UNS ===== -->
+  <section id="ueber-uns" class="section section--elevated" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-inner reveal">
+        <div class="about-avatar" aria-hidden="true">AB</div>
+        <span class="section-label">Über mich</span>
+        <h2 id="about-heading">André Bachmann</h2>
+        <p>
+          Ich bin leidenschaftlicher Tennisspieler und zertifizierter Besaitungsprofi mit langjähriger Erfahrung. Was als Hobby begann, wurde zur Berufung: Seit Jahren besaite ich Schläger für Hobbyspieler und Leistungssportler mit höchster Präzision.
+        </p>
+        <p>
+          Jeden Schläger behandle ich individuell — ob Polyester-Monofilament für den Spin-Spieler, Naturdarmsaite für den Komfort-Sucher oder ein maßgeschneidertes Hybrid-Setup. Persönliche Beratung, kurze Wartezeiten und faire Preise sind mein Anspruch.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">11</div>
+            <div class="stat-label">Jahre Erfahrung</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Sportarten</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Handarbeit</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1</div>
+            <div class="stat-label">KI-Roboter</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section faq-section" aria-labelledby="faq-heading">
+    <!-- Animated spiral background -->
+    <div class="faq-spiral" aria-hidden="true">
+      <svg id="faqSpiral" viewBox="0 0 560 560" width="560" height="560"></svg>
+    </div>
+
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;">
+        <span class="section-label">Häufige Fragen</span>
+        <h2 id="faq-heading">FAQ</h2>
+        <p style="margin:var(--space-sm) auto 0;text-align:center;max-width:480px;">Alles Wichtige rund um Besaitung, Reparatur und Vermietung auf einen Blick.</p>
+      </div>
+
+      <div class="faq-grid reveal">
+
+        <!-- 1 -->
+        <div class="faq-card">
+          <button class="faq-btn" aria-expanded="false">
+            <div class="faq-btn-left">
+              <span class="faq-num">01</span>
+              <span class="faq-question">Wie oft sollte ich meinen Schläger neu besaiten?</span>
+            </div>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Als Faustregel gilt: so oft wie du pro Woche spielst, so oft pro Jahr solltest du besaiten. Wer also zweimal pro Woche spielt, besaitet idealerweise zweimal im Jahr. Bei intensivem Training oder Wettkampf kann auch eine häufigere Besaitung sinnvoll sein.</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="faq-card">
+          <button class="faq-btn" aria-expanded="false">
+            <div class="faq-btn-left">
+              <span class="faq-num">02</span>
+              <span class="faq-question">Welche Saite ist die richtige für mich?</span>
+            </div>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Das hängt von deinem Spielstil, Niveau und Schläger ab. Polyester-Saiten bieten viel Kontrolle und Spin, sind aber härter am Arm. Multifilament- und Naturdarmsaiten sind komfortabler und spielfreudiger — ideal für Freizeitspieler oder armempfindliche Spieler. Wir beraten dich gerne individuell.</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="faq-card">
+          <button class="faq-btn" aria-expanded="false">
+            <div class="faq-btn-left">
+              <span class="faq-num">03</span>
+              <span class="faq-question">Wie lange dauert eine Besaitung?</span>
+            </div>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Eine professionelle Besaitung dauert in der Regel 30 bis 60 Minuten. Bei vorheriger Terminabsprache ist auch eine Express-Besaitung möglich, sodass du deinen Schläger noch am selben Tag zurückbekommst.</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="faq-card">
+          <button class="faq-btn" aria-expanded="false">
+            <div class="faq-btn-left">
+              <span class="faq-num">04</span>
+              <span class="faq-question">Welche Spannung empfehlen Sie?</span>
+            </div>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Niedrigere Spannungen (z. B. 22–25 kg) erzeugen mehr Power und Komfort, höhere Spannungen (26–30 kg) mehr Kontrolle und Gefühl. Die optimale Spannung hängt von Schläger, Saite und persönlichem Spielgefühl ab. Anfänger starten oft mit mittleren Spannungen um 24–26 kg.</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="faq-card">
+          <button class="faq-btn" aria-expanded="false">
+            <div class="faq-btn-left">
+              <span class="faq-num">05</span>
+              <span class="faq-question">Kann ein gebrochener Schläger repariert werden?</span>
+            </div>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Das kommt auf die Art des Schadens an. Gebrochene Griffe, defekte Dämpfer oder Bespannungsschäden lassen sich in der Regel problemlos beheben. Bei gebrochenen Rahmen aus Carbon ist eine Reparatur oft nicht möglich — hier beraten wir dich ehrlich über deine Optionen.</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="faq-card">
+          <button class="faq-btn" aria-expanded="false">
+            <div class="faq-btn-left">
+              <span class="faq-num">06</span>
+              <span class="faq-question">Was kostet eine Besaitung?</span>
+            </div>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Der Preis setzt sich aus Arbeitskosten und Saitenpreis zusammen. Einstiegssaiten beginnen ab ca. 5–8 €, Premiumsaiten wie Naturdarmsaiten können 30 € und mehr kosten. Die Besaitungsarbeit berechnen wir fair und transparent — gerne auf Anfrage ein individuelles Angebot.</p>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="faq-card">
+          <button class="faq-btn" aria-expanded="false">
+            <div class="faq-btn-left">
+              <span class="faq-num">07</span>
+              <span class="faq-question">Wie funktioniert die Acemate S10 Vermietung?</span>
+            </div>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Der KI-Tennisroboter Acemate S10 kann stundenweise oder tageweise gemietet werden. Nach Terminabsprache und kurzer Einweisung in die App-Steuerung kann das Gerät direkt auf deinem Platz eingesetzt werden. Eine Kaution ist erforderlich. Kontaktiere uns für aktuelle Verfügbarkeit und Preise.</p>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="faq-card">
+          <button class="faq-btn" aria-expanded="false">
+            <div class="faq-btn-left">
+              <span class="faq-num">08</span>
+              <span class="faq-question">Benötige ich einen Termin oder kann ich einfach vorbeikommen?</span>
+            </div>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Grundsätzlich kannst du deinen Schläger jederzeit abgeben. Für eine schnelle Abwicklung — besonders wenn du auf deinen Schläger angewiesen bist — empfehlen wir eine kurze Voranmeldung per Telefon oder E-Mail, damit wir uns die Zeit für dich freihalten können.</p>
+          </div>
+        </div>
+
+      </div><!-- /.faq-grid -->
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section id="kontakt" class="section section--subtle" aria-labelledby="kontakt-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Kontakt aufnehmen</span>
+        <h2 id="kontakt-heading">Schreib uns</h2>
+        <p>Fragen zur Besaitung, Terminvereinbarung oder Ballmaschinen-Vermietung — wir melden uns schnell.</p>
+      </div>
+
+      <div class="kontakt-grid">
+        <!-- Kontaktinformationen -->
+        <div class="contact-info reveal-left">
+          <!-- Adresse -->
+          <div class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 2C7.13 2 4 5.13 4 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7z"/>
+                <circle cx="11" cy="9" r="2.5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-card-label">Adresse</div>
+              <div class="contact-card-value">
+                André Bachmann<br>
+                Rohrhammerweg 12<br>
+                99610 Sömmerda
+              </div>
+            </div>
+          </div>
+
+          <!-- Telefon -->
+          <div class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 11 19.79 19.79 0 0 1 0 2.18 2 2 0 0 1 1.99 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-card-label">Telefon</div>
+              <div class="contact-card-value">
+                <a href="tel:+4916217939690">0162 1793969</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-Mail -->
+          <div class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-card-label">E-Mail</div>
+              <div class="contact-card-value">
+                <a href="mailto:info@schlaegerbesaitung.de">info@schlaegerbesaitung.de</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kontaktformular -->
+        <div class="contact-form reveal-right">
+          <h3>Nachricht senden</h3>
+          <form id="contactForm" novalidate>
+            <!-- Honeypot -->
+            <div class="form-honeypot" aria-hidden="true">
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Max Mustermann" required autocomplete="name">
+                <div class="form-error" id="name-error" role="alert">Bitte gib deinen Namen ein.</div>
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="max@beispiel.de" required autocomplete="email">
+                <div class="form-error" id="email-error" role="alert">Bitte gib eine gültige E-Mail-Adresse ein.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="0162 123456" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="schlaeger">Schlägertyp</label>
+                <select id="schlaeger" name="schlaeger">
+                  <option value="">Bitte wählen</option>
+                  <option value="tennis">Tennis</option>
+                  <option value="squash">Squash</option>
+                  <option value="badminton">Badminton</option>
+                  <option value="acemate">Acemate S10 Vermietung</option>
+                  <option value="sonstiges">Sonstiges</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="nachricht">Nachricht <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="nachricht" name="nachricht" placeholder="Wie können wir dir helfen?" required></textarea>
+              <div class="form-error" id="nachricht-error" role="alert">Bitte gib eine Nachricht ein.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+              Nachricht senden
+            </button>
+          </form>
+
+          <!-- Erfolgs-Nachricht -->
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <div class="form-success-icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <circle cx="15" cy="15" r="13"/>
+                <path d="M9 15l4 4 8-8"/>
+              </svg>
+            </div>
+            <h3>Vielen Dank!</h3>
+            <p>Deine Nachricht ist bei uns angekommen. Wir melden uns so schnell wie möglich bei dir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARKENPARTNER ===== -->
+  <section id="partner" class="section partner-section" aria-labelledby="partner-heading">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;">
+        <span class="section-label">Unsere Markenpartner</span>
+        <h2 id="partner-heading">Ausgestattet mit den Besten</h2>
+        <p style="margin:var(--space-sm) auto 0;text-align:center;max-width:520px;">Wir arbeiten ausschließlich mit führenden Herstellern zusammen — für Qualität, die du auf dem Platz spürst.</p>
+      </div>
+
+      <div class="partner-logos reveal">
+
+        <!-- HEAD -->
+        <div class="partner-logo-card" aria-label="HEAD">
+          <svg viewBox="0 0 90 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg">
+            <!-- HEAD arch icon -->
+            <path d="M12,98 C12,98 10,52 28,34 C40,22 56,18 68,24 C80,30 84,46 84,64 L84,80 L72,80 C72,80 72,62 66,52 C60,42 48,40 40,48 C30,58 28,82 28,98 Z" fill="currentColor"/>
+            <!-- Ball inside arch -->
+            <circle cx="72" cy="38" r="7" fill="currentColor"/>
+            <!-- HEAD text -->
+            <text x="45" y="108" text-anchor="middle" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="22" fill="currentColor" letter-spacing="-0.5">HEAD</text>
+          </svg>
+        </div>
+
+        <!-- MSV Tennis -->
+        <div class="partner-logo-card partner-logo-card--msv" aria-label="MSV Tennis">
+          <svg viewBox="0 0 130 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg" style="height:50px;">
+            <!-- Bird / hawk wings -->
+            <path d="M18,14 C18,14 35,8 52,16 L44,20 C44,20 52,24 58,30 L44,26 C44,26 38,34 32,38 L30,28 C30,28 22,34 14,38 L18,24 Z" fill="#cc0022"/>
+            <path d="M18,14 C10,18 4,26 8,32 L14,38 C14,38 8,28 14,22 Z" fill="#cc0022" opacity="0.55"/>
+            <!-- MSV text -->
+            <text x="68" y="26" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="22" fill="#cc0022" letter-spacing="-0.5">MSV</text>
+            <text x="68" y="40" font-family="Arial, sans-serif" font-weight="400" font-size="9" fill="#cc0022" letter-spacing="3.5">TENNIS</text>
+          </svg>
+        </div>
+
+        <!-- Gamma Sports -->
+        <div class="partner-logo-card" aria-label="Gamma Sports">
+          <svg viewBox="0 0 170 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg" style="height:50px;">
+            <!-- Red circle -->
+            <circle cx="30" cy="30" r="28" fill="#cc1111"/>
+            <!-- White G shape inside circle -->
+            <path d="M40,16 C28,10 14,18 14,30 C14,42 24,48 34,46 L34,30 L26,30 L26,26 L40,26 L40,46 C48,42 52,36 52,28 L38,28 L38,24 L52,24 C50,20 46,17 40,16 Z" fill="white"/>
+            <!-- Gamma text -->
+            <text x="66" y="28" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="20" font-style="italic" fill="currentColor" letter-spacing="-0.5">Gamma</text>
+            <text x="66" y="48" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="16" font-style="italic" fill="currentColor" letter-spacing="1">SPORTS</text>
+          </svg>
+        </div>
+
+        <!-- Polyfibre -->
+        <div class="partner-logo-card" aria-label="Polyfibre">
+          <svg viewBox="0 0 150 55" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg" style="height:50px;">
+            <!-- Stylised P mark -->
+            <path d="M8,12 L8,44 L14,44 L14,32 C14,32 28,34 28,22 C28,12 16,10 8,12 Z M14,16 C14,16 22,15 22,22 C22,29 14,28 14,28 Z" fill="currentColor"/>
+            <!-- Polyfibre text -->
+            <text x="36" y="26" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="currentColor" letter-spacing="0.5">POLYFIBRE</text>
+            <line x1="36" y1="32" x2="148" y2="32" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+            <text x="36" y="44" font-family="Arial, sans-serif" font-weight="300" font-size="9.5" fill="currentColor" letter-spacing="2.5" opacity="0.65">strings &amp; more</text>
+          </svg>
+        </div>
+
+        <!-- Kirschbaum -->
+        <div class="partner-logo-card" aria-label="Kirschbaum">
+          <svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg" style="height:50px;">
+            <!-- Cherry -->
+            <circle cx="20" cy="38" r="13" fill="#cc1111"/>
+            <circle cx="20" cy="38" r="13" fill="url(#cherryGloss)" opacity="0.3"/>
+            <defs>
+              <radialGradient id="cherryGloss" cx="35%" cy="35%">
+                <stop offset="0%" stop-color="white" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="white" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- Stem -->
+            <path d="M20,25 C20,25 22,16 30,12" stroke="#7a5c2e" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- Kirschbaum text -->
+            <text x="40" y="30" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="18" fill="currentColor" letter-spacing="0.3">Kirschbaum</text>
+            <text x="40" y="46" font-family="Georgia, 'Times New Roman', serif" font-weight="400" font-style="italic" font-size="11" fill="currentColor" opacity="0.6" letter-spacing="0.5">strings &amp; grips</text>
+          </svg>
+        </div>
+
+      </div><!-- /.partner-logos -->
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Schlägerbesaitung André Bachmann">
+          <p>Professionelle Besaitung, Reparatur und Zubehör für Tennis, Squash und Badminton — direkt in Sömmerda.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#schlaeger">Schläger</a></li>
+            <li><a href="#acemate">Ballmaschinen-Vermietung</a></li>
+            <li><a href="#ueber-uns">Über mich</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul class="footer-links" role="list">
+            <li>Rohrhammerweg 12</li>
+            <li>99610 Sömmerda</li>
+            <li><a href="tel:+4916217939690">0162 1793969</a></li>
+            <li><a href="mailto:info@schlaegerbesaitung.de">info@schlaegerbesaitung.de</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Schlägerbesaitung André Bachmann. Alle Rechte vorbehalten.</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="impressum.html">Impressum</a>
+          <a href="agb.html">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
