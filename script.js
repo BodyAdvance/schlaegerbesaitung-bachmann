@@ -384,6 +384,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!value) { showError('nachricht', 'Bitte gib eine Nachricht ein.'); return false; }
         clearError('nachricht'); return true;
       }
+      if (fieldId === 'datenschutz') {
+        const checkbox = document.getElementById('datenschutz');
+        if (!checkbox || !checkbox.checked) { showError('datenschutz', 'Bitte stimme der Datenschutzerklärung zu.'); return false; }
+        clearError('datenschutz'); return true;
+      }
       return true;
     }
 
@@ -404,22 +409,40 @@ document.addEventListener('DOMContentLoaded', () => {
       if (honeypot && honeypot.value) return;
 
       // Validate all required fields
-      const validName    = validateField('name');
-      const validEmail   = validateField('email');
-      const validMessage = validateField('nachricht');
+      const validName       = validateField('name');
+      const validEmail      = validateField('email');
+      const validMessage    = validateField('nachricht');
+      const validDatenschutz = validateField('datenschutz');
 
-      if (!validName || !validEmail || !validMessage) return;
+      if (!validName || !validEmail || !validMessage || !validDatenschutz) return;
 
       // Show loading state
       submitBtn.disabled = true;
       submitBtn.textContent = 'Wird gesendet…';
 
-      // Simulate async submission (replace with fetch() when backend ready)
-      setTimeout(() => {
-        contactForm.style.display = 'none';
-        formSuccess.classList.add('visible');
-        contactForm.reset();
-      }, 900);
+      // Send to PHP backend
+      const formData = new FormData(contactForm);
+      fetch('kontakt.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          contactForm.style.display = 'none';
+          formSuccess.classList.add('visible');
+          contactForm.reset();
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Nachricht senden';
+          alert('Beim Senden ist ein Fehler aufgetreten. Bitte versuche es erneut oder schreibe uns direkt an info@schlaegerbesaitung.de');
+        }
+      })
+      .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Nachricht senden';
+        alert('Beim Senden ist ein Fehler aufgetreten. Bitte versuche es erneut oder schreibe uns direkt an info@schlaegerbesaitung.de');
+      });
     });
   }
 
