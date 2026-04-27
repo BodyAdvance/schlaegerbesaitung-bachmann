@@ -43,14 +43,14 @@ $body .= str_repeat('-', 40) . "\n\n";
 $body .= "Nachricht:\n$nachricht\n";
 
 // Header
-$headers  = "From: noreply@schlaegerbesaitung.de\r\n";
+$headers  = "From: Anfrage Schlaegerbesaitung <info@schlaegerbesaitung.de>\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 // ── 1. Benachrichtigung an André ──────────────────────────
-$sent = mail($to, $subject, $body, $headers);
+$sent = mail($to, $subject, $body, $headers, '-f info@schlaegerbesaitung.de');
 
 // ── 2. Automatische Bestätigungsmail an Interessenten ─────
 $confirm_subject = '=?UTF-8?B?' . base64_encode('Vielen Dank für deine Anfrage – Schlägerbesaitung André Bachmann') . '?=';
