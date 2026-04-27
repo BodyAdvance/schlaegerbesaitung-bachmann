@@ -73,7 +73,7 @@ $confirm_body = '<!DOCTYPE html>
         <!-- Logo -->
         <tr>
           <td align="center" style="padding-bottom:32px;">
-            <img src="https://schlaegerbesaitung.de/images/logo.png" alt="Schlägerbesaitung André Bachmann" width="180" style="display:block;max-width:180px;">
+            <img src="https://schlaegerbesaitung.de/images/logo.png" alt="Schlägerbesaitung André Bachmann" width="180" style="display:block;max-width:180px;filter:brightness(0) invert(1);">
           </td>
         </tr>
 
