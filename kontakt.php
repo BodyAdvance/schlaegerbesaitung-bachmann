@@ -85,7 +85,7 @@ $confirm_headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 $confirm_headers .= "MIME-Version: 1.0\r\n";
 $confirm_headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-mail($email, $confirm_subject, $confirm_body, $confirm_headers);
+mail($email, $confirm_subject, $confirm_body, $confirm_headers, '-f info@schlaegerbesaitung.de');
 
 // ── Antwort an Browser ────────────────────────────────────
 if ($sent) {

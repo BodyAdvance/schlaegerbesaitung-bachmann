@@ -821,5 +821,36 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- ===== COOKIE BANNER ===== -->
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Cookie-Einstellungen" aria-modal="true">
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        <p class="cookie-title">🍪 Diese Website verwendet Cookies</p>
+        <p>Wir verwenden Cookies, um die grundlegenden Funktionen der Website zu gewährleisten und deine Erfahrung zu verbessern. Mit deiner Zustimmung können wir auch Analyse- und Marketing-Dienste (z.&nbsp;B. Google Analytics) einsetzen. Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+      </div>
+      <div class="cookie-actions">
+        <button id="cookieDecline" class="btn btn-ghost cookie-btn-decline">Nur notwendige</button>
+        <button id="cookieAccept" class="btn btn-primary cookie-btn-accept">Alle akzeptieren</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var consent = localStorage.getItem('cookie_consent');
+      if (!consent) {
+        document.getElementById('cookieBanner').classList.add('visible');
+      }
+      document.getElementById('cookieAccept').addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'all');
+        document.getElementById('cookieBanner').classList.remove('visible');
+      });
+      document.getElementById('cookieDecline').addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'necessary');
+        document.getElementById('cookieBanner').classList.remove('visible');
+      });
+    })();
+  </script>
 </body>
 </html>
