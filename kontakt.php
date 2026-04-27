@@ -154,7 +154,7 @@ $confirm_body = '<!DOCTYPE html>
           <td align="center" style="padding-top:24px;">
             <p style="margin:0;font-size:12px;color:#8b8b99;line-height:1.6;text-align:center;">
               Diese E-Mail wurde automatisch generiert. Bitte antworte direkt auf diese Mail.<br>
-              Einzelunternehmen · Kleingewerbe gem. § 19 UStG · Sömmerda, Deutschland<br>
+              Einzelunternehmen · Sömmerda, Deutschland<br>
               <a href="https://schlaegerbesaitung.de/datenschutz.html" style="color:#8b8b99;">Datenschutzerklärung</a> &nbsp;·&nbsp;
               <a href="https://schlaegerbesaitung.de/impressum.html" style="color:#8b8b99;">Impressum</a>
             </p>
