@@ -68,7 +68,6 @@ $confirm_body .= "Falls du in der Zwischenzeit Fragen hast, erreichst du mich je
 $confirm_body .= "Telefon:  0162 1793969\n";
 $confirm_body .= "E-Mail:   info@schlaegerbesaitung.de\n";
 $confirm_body .= "Website:  www.schlaegerbesaitung.de\n\n";
-$confirm_body .= "Ich freue mich darauf, deinen Schläger in Bestform zu bringen!\n\n";
 $confirm_body .= "Mit sportlichen Grüßen,\n\n";
 $confirm_body .= "André Bachmann\n";
 $confirm_body .= "Schlägerbesaitung André Bachmann\n";
@@ -80,7 +79,7 @@ $confirm_body .= str_repeat('-', 40) . "\n";
 $confirm_body .= "Diese E-Mail wurde automatisch generiert. Bitte antworte direkt auf diese Mail oder kontaktiere mich über die oben genannten Wege.\n";
 $confirm_body .= "Einzelunternehmen · Kleingewerbe gem. § 19 UStG · Sömmerda, Deutschland\n";
 
-$confirm_headers  = "From: =?UTF-8?B?" . base64_encode("André Bachmann – Schlägerbesaitung") . "?= <info@schlaegerbesaitung.de>\r\n";
+$confirm_headers  = "From: info@schlaegerbesaitung.de\r\n";
 $confirm_headers .= "Reply-To: info@schlaegerbesaitung.de\r\n";
 $confirm_headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 $confirm_headers .= "MIME-Version: 1.0\r\n";
