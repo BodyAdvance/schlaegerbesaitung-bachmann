@@ -440,6 +440,34 @@ p {
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8), 0 1px 4px rgba(0, 0, 0, 0.9);
 }
 
+.hero-ersa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 100px;
+  padding: 0.35rem 0.9rem 0.35rem 0.45rem;
+  margin-bottom: var(--space-lg);
+  backdrop-filter: blur(8px);
+}
+
+.hero-ersa-logo {
+  height: 22px;
+  width: auto;
+  border-radius: 3px;
+  background: #fff;
+  padding: 1px 3px;
+  object-fit: contain;
+}
+
+.hero-ersa span {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.03em;
+}
+
 .hero-actions {
   display: flex;
   gap: var(--space-sm);
@@ -681,7 +709,7 @@ p {
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  color: var(--color-yellow);
+  color: var(--color-accent) !important;
   margin-top: 2px;
 }
 
@@ -969,12 +997,12 @@ p {
 
 .equipment-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: var(--space-md);
 }
 
 .equipment-grid--single {
-  grid-template-columns: minmax(260px, 360px);
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
 .equipment-item {
@@ -992,14 +1020,13 @@ p {
 
 .equipment-img-wrap {
   width: 100%;
-  aspect-ratio: 4/3;
   overflow: hidden;
+  background: var(--color-bg-subtle);
 }
 
 .equipment-img-wrap img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
@@ -1017,11 +1044,21 @@ p {
   letter-spacing: 0.05em;
 }
 
+.equipment-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  padding: 0.5rem 1rem 0;
+}
+
 .equipment-name {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--color-white);
-  padding: 0.875rem 1rem 0.25rem;
+  padding: 0.25rem 1rem 0.25rem;
 }
 
 .equipment-meta {
@@ -1324,6 +1361,17 @@ p {
   height: 70px;
   width: auto;
   max-width: 160px;
+}
+
+.partner-logo-img {
+  height: 50px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  filter: none;
 }
 
 /* MSV special styling */

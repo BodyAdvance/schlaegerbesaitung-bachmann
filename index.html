@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -66,6 +66,12 @@
         <p class="hero-subtitle" id="heroSubtitle">
           Tennis, Squash und Badminton — besaitet mit Präzision und Leidenschaft. Direkt in Sömmerda.
         </p>
+
+        <!-- ERSA Badge -->
+        <div class="hero-ersa" id="heroErsa">
+          <img src="images/ersa-logo.jpg" alt="ERSA International" class="hero-ersa-logo">
+          <span>Mitglied im ERSA International</span>
+        </div>
 
         <!-- CTAs -->
         <div class="hero-actions" id="heroActions">
@@ -134,7 +140,7 @@
             </svg>
           </div>
           <h3>Schlägeranpassung</h3>
-          <p>Ich passe deinen Schläger nach deinen Bedürfnissen individuell an. Dein Spiel wird besser — dann muss es dein Schläger auch werden. Gewicht, Balance und Schwunggewicht werden genau auf dein Spielniveau abgestimmt. Außerdem gleiche ich mehrere Schläger desselben Typs und Herstellers an, die durch Fertigungstoleranzen Unterschiede aufweisen können, und passe die Griffstärke an.</p>
+          <p>Ich passe deinen Schläger nach deinen Bedürfnissen individuell an. Dein Spiel wird besser — dann muss es dein Schläger auch werden. Gewicht, Balance und Schwunggewicht werden genau auf dein Spielniveau abgestimmt. Außerdem gleiche ich mehrere Schläger desselben Typs und Herstellers an, die durch Fertigungstoleranzen Unterschiede aufweisen können. Des Weiteren kann bei Bedarf die Griffstärke angepasst werden.</p>
         </article>
 
         <!-- Ballmaschine -->
@@ -328,6 +334,27 @@
                 <circle cx="10" cy="10" r="9"/>
                 <path d="M6 10l3 3 5-5"/>
               </svg>
+              2 Stunden intensives Training mit einer Akkuladung möglich — Ladegerät inklusive, Ladezustand am Gerät in % ersichtlich
+            </li>
+            <li>
+              <svg class="feature-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="10" cy="10" r="9"/>
+                <path d="M6 10l3 3 5-5"/>
+              </svg>
+              70 Bälle im Mietpreis inklusive
+            </li>
+            <li>
+              <svg class="feature-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="10" cy="10" r="9"/>
+                <path d="M6 10l3 3 5-5"/>
+              </svg>
+              Gewicht: 17 kg
+            </li>
+            <li>
+              <svg class="feature-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <circle cx="10" cy="10" r="9"/>
+                <path d="M6 10l3 3 5-5"/>
+              </svg>
               Präzise Spin-, Tempo- und Winkelsteuerung per Smartphone-App
             </li>
             <li>
@@ -353,7 +380,7 @@
             </li>
           </ul>
 
-          <a href="#kontakt" class="btn btn-yellow">Jetzt mieten</a>
+          <a href="#kontakt" class="btn btn-primary">Jetzt mieten</a>
         </div>
 
         <div class="acemate-image-wrap reveal-right">
@@ -371,64 +398,71 @@
         <h2 id="equipment-heading">Professionelles Werkzeug für professionelle Ergebnisse</h2>
       </div>
 
-      <!-- Besaitungsmaschinen -->
-      <div class="equipment-category reveal">
-        <h3 class="equipment-cat-title">Besaitungsmaschinen</h3>
-        <div class="equipment-grid">
-          <div class="equipment-item">
-            <div class="equipment-img-wrap">
-              <img src="images/head-te3620.jpg" alt="HEAD TE-3620 Ltd. Parnell Edition Nr. 12 Besaitungsmaschine" loading="lazy">
-            </div>
-            <p class="equipment-name">HEAD TE-3620 Ltd. Parnell Edition Nr. 12</p>
-            <p class="equipment-meta">Modell 2026</p>
-          </div>
-          <div class="equipment-item">
-            <div class="equipment-img-wrap">
-              <img src="images/tecnifibre-xcord.jpg" alt="Tecnifibre X-Cord Besaitungsmaschine" loading="lazy">
-            </div>
-            <p class="equipment-name">Tecnifibre X-Cord</p>
-            <p class="equipment-meta">Modell 2026</p>
-          </div>
-        </div>
-      </div>
+      <div class="equipment-grid reveal">
 
-      <!-- DT Wert-Messgerät -->
-      <div class="equipment-category reveal">
-        <h3 class="equipment-cat-title">DT Wert-Messgerät</h3>
-        <div class="equipment-grid equipment-grid--single">
-          <div class="equipment-item">
-            <div class="equipment-img-wrap">
-              <img src="images/ert300.jpg" alt="ERT 300 DT Wert-Messgerät" loading="lazy">
-            </div>
-            <p class="equipment-name">ERT 300</p>
+        <!-- Besaitungsmaschinen -->
+        <div class="equipment-item">
+          <div class="equipment-img-wrap">
+            <img src="images/head-te3620.jpg" alt="HEAD TE-3620 Ltd. Parnell Edition Nr. 12 Besaitungsmaschine" loading="lazy">
           </div>
+          <span class="equipment-tag">Besaitungsmaschine</span>
+          <p class="equipment-name">HEAD TE-3620 Ltd. Parnell Edition Nr. 12</p>
+          <p class="equipment-meta">Modell 2026</p>
         </div>
-      </div>
 
-      <!-- Diagnosecenter -->
-      <div class="equipment-category reveal">
-        <h3 class="equipment-cat-title">Diagnosecenter</h3>
-        <div class="equipment-grid equipment-grid--single">
-          <div class="equipment-item">
-            <div class="equipment-img-wrap">
-              <img src="images/head-4in1.jpg" alt="HEAD 4 in 1 Diagnosecenter" loading="lazy">
-            </div>
-            <p class="equipment-name">HEAD 4 in 1</p>
-            <p class="equipment-meta">Messung von Gewicht, Balance, Schwunggewicht und Drehgewicht</p>
+        <div class="equipment-item">
+          <div class="equipment-img-wrap">
+            <img src="images/tecnifibre-xcord.jpg" alt="Tecnifibre X-Cord Besaitungsmaschine" loading="lazy">
           </div>
+          <span class="equipment-tag">Besaitungsmaschine</span>
+          <p class="equipment-name">Tecnifibre X-Cord</p>
+          <p class="equipment-meta">Modell 2026</p>
         </div>
-      </div>
 
-      <!-- Werkzeuge -->
-      <div class="equipment-category reveal">
-        <h3 class="equipment-cat-title">Werkzeuge</h3>
-        <div class="equipment-grid equipment-grid--single">
-          <div class="equipment-item">
-            <div class="equipment-img-wrap">
-              <img src="images/werkzeuge.jpg" alt="Professionelle Besaitungswerkzeuge" loading="lazy">
-            </div>
+        <!-- DT Wert-Messgerät -->
+        <div class="equipment-item">
+          <div class="equipment-img-wrap">
+            <img src="images/ert300.jpg" alt="ERT 300 DT Wert-Messgerät" loading="lazy">
           </div>
+          <span class="equipment-tag">DT Wert-Messgerät</span>
+          <p class="equipment-name">ERT 300</p>
         </div>
+
+        <!-- Diagnosecenter -->
+        <div class="equipment-item">
+          <div class="equipment-img-wrap">
+            <img src="images/head-4in1.jpg" alt="HEAD 4 in 1 Diagnosecenter" loading="lazy">
+          </div>
+          <span class="equipment-tag">Diagnosecenter</span>
+          <p class="equipment-name">HEAD 4 in 1</p>
+          <p class="equipment-meta">Gewicht, Balance, Schwunggewicht &amp; Drehgewicht</p>
+        </div>
+
+        <!-- Werkzeuge -->
+        <div class="equipment-item">
+          <div class="equipment-img-wrap">
+            <img src="images/werkzeuge-tasche.jpg" alt="Parnell Pad Werkzeug-Tasche" loading="lazy">
+          </div>
+          <span class="equipment-tag">Werkzeuge</span>
+          <p class="equipment-name">Parnell Pad by ParnellKnot</p>
+        </div>
+
+        <div class="equipment-item">
+          <div class="equipment-img-wrap">
+            <img src="images/werkzeuge-tasche-offen.jpg" alt="Werkzeug-Tasche geöffnet" loading="lazy">
+          </div>
+          <span class="equipment-tag">Werkzeuge</span>
+          <p class="equipment-name">Werkzeug-Set geöffnet</p>
+        </div>
+
+        <div class="equipment-item">
+          <div class="equipment-img-wrap">
+            <img src="images/werkzeuge-ausgelegt.jpg" alt="Professionelle Besaitungswerkzeuge ausgelegt" loading="lazy">
+          </div>
+          <span class="equipment-tag">Werkzeuge</span>
+          <p class="equipment-name">Vollständiges Werkzeug-Sortiment</p>
+        </div>
+
       </div>
 
     </div>
@@ -826,25 +860,39 @@
 
       <div class="partner-logos reveal">
 
-        <!-- HEAD -->
-        <div class="partner-logo-card" aria-label="HEAD">
-          <svg viewBox="0 0 90 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg">
-            <!-- HEAD arch icon -->
-            <path d="M12,98 C12,98 10,52 28,34 C40,22 56,18 68,24 C80,30 84,46 84,64 L84,80 L72,80 C72,80 72,62 66,52 C60,42 48,40 40,48 C30,58 28,82 28,98 Z" fill="currentColor"/>
-            <!-- Ball inside arch -->
-            <circle cx="72" cy="38" r="7" fill="currentColor"/>
-            <!-- HEAD text -->
-            <text x="45" y="108" text-anchor="middle" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="22" fill="currentColor" letter-spacing="-0.5">HEAD</text>
-          </svg>
+        <div class="partner-logo-card" aria-label="Tecnifibre">
+          <img src="images/logo-tecnifibre.webp" alt="Tecnifibre" class="partner-logo-img">
+        </div>
+
+        <div class="partner-logo-card" aria-label="Babolat">
+          <img src="images/logo-babolat.jpg" alt="Babolat" class="partner-logo-img">
+        </div>
+
+        <div class="partner-logo-card" aria-label="Luxilon">
+          <img src="images/logo-luxilon.png" alt="Luxilon" class="partner-logo-img">
+        </div>
+
+        <div class="partner-logo-card" aria-label="Li-Ning">
+          <img src="images/logo-lining.png" alt="Li-Ning" class="partner-logo-img">
+        </div>
+
+        <div class="partner-logo-card" aria-label="Yonex">
+          <img src="images/logo-yonex.svg" alt="Yonex" class="partner-logo-img">
+        </div>
+
+        <div class="partner-logo-card" aria-label="Ashaway">
+          <img src="images/logo-ashaway.png" alt="Ashaway" class="partner-logo-img">
+        </div>
+
+        <div class="partner-logo-card" aria-label="Oliver">
+          <img src="images/logo-oliver.png" alt="Oliver" class="partner-logo-img">
         </div>
 
         <!-- MSV Tennis -->
         <div class="partner-logo-card partner-logo-card--msv" aria-label="MSV Tennis">
           <svg viewBox="0 0 130 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg" style="height:50px;">
-            <!-- Bird / hawk wings -->
             <path d="M18,14 C18,14 35,8 52,16 L44,20 C44,20 52,24 58,30 L44,26 C44,26 38,34 32,38 L30,28 C30,28 22,34 14,38 L18,24 Z" fill="#cc0022"/>
             <path d="M18,14 C10,18 4,26 8,32 L14,38 C14,38 8,28 14,22 Z" fill="#cc0022" opacity="0.55"/>
-            <!-- MSV text -->
             <text x="68" y="26" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="22" fill="#cc0022" letter-spacing="-0.5">MSV</text>
             <text x="68" y="40" font-family="Arial, sans-serif" font-weight="400" font-size="9" fill="#cc0022" letter-spacing="3.5">TENNIS</text>
           </svg>
@@ -853,11 +901,8 @@
         <!-- Gamma Sports -->
         <div class="partner-logo-card" aria-label="Gamma Sports">
           <svg viewBox="0 0 170 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg" style="height:50px;">
-            <!-- Red circle -->
             <circle cx="30" cy="30" r="28" fill="#cc1111"/>
-            <!-- White G shape inside circle -->
             <path d="M40,16 C28,10 14,18 14,30 C14,42 24,48 34,46 L34,30 L26,30 L26,26 L40,26 L40,46 C48,42 52,36 52,28 L38,28 L38,24 L52,24 C50,20 46,17 40,16 Z" fill="white"/>
-            <!-- Gamma text -->
             <text x="66" y="28" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="20" font-style="italic" fill="currentColor" letter-spacing="-0.5">Gamma</text>
             <text x="66" y="48" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="16" font-style="italic" fill="currentColor" letter-spacing="1">SPORTS</text>
           </svg>
@@ -866,9 +911,7 @@
         <!-- Polyfibre -->
         <div class="partner-logo-card" aria-label="Polyfibre">
           <svg viewBox="0 0 150 55" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg" style="height:50px;">
-            <!-- Stylised P mark -->
             <path d="M8,12 L8,44 L14,44 L14,32 C14,32 28,34 28,22 C28,12 16,10 8,12 Z M14,16 C14,16 22,15 22,22 C22,29 14,28 14,28 Z" fill="currentColor"/>
-            <!-- Polyfibre text -->
             <text x="36" y="26" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="currentColor" letter-spacing="0.5">POLYFIBRE</text>
             <line x1="36" y1="32" x2="148" y2="32" stroke="currentColor" stroke-width="1" opacity="0.35"/>
             <text x="36" y="44" font-family="Arial, sans-serif" font-weight="300" font-size="9.5" fill="currentColor" letter-spacing="2.5" opacity="0.65">strings &amp; more</text>
@@ -878,18 +921,8 @@
         <!-- Kirschbaum -->
         <div class="partner-logo-card" aria-label="Kirschbaum">
           <svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="partner-logo-svg" style="height:50px;">
-            <!-- Cherry -->
             <circle cx="20" cy="38" r="13" fill="#cc1111"/>
-            <circle cx="20" cy="38" r="13" fill="url(#cherryGloss)" opacity="0.3"/>
-            <defs>
-              <radialGradient id="cherryGloss" cx="35%" cy="35%">
-                <stop offset="0%" stop-color="white" stop-opacity="0.6"/>
-                <stop offset="100%" stop-color="white" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-            <!-- Stem -->
             <path d="M20,25 C20,25 22,16 30,12" stroke="#7a5c2e" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- Kirschbaum text -->
             <text x="40" y="30" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="18" fill="currentColor" letter-spacing="0.3">Kirschbaum</text>
             <text x="40" y="46" font-family="Georgia, 'Times New Roman', serif" font-weight="400" font-style="italic" font-size="11" fill="currentColor" opacity="0.6" letter-spacing="0.5">strings &amp; grips</text>
           </svg>
