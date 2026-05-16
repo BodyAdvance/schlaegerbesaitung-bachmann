@@ -1,0 +1,12 @@
+# Bilder und Assets außerhalb des Webprojekts
+../Bilder Website/
+../Screenshots Claude Website Schlager Strato/
+../WEbsite Andre/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editoren
+.vscode/
+*.swp
