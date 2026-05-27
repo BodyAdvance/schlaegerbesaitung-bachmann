@@ -239,15 +239,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 88px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
 
 .nav-logo img {
-  height: 48px;
+  height: 72px;
   width: auto;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
 }
 
 .nav-menu {
