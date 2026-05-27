@@ -288,9 +288,9 @@ p {
 .nav-cta {
   padding: 0.5rem 1.2rem;
   font-size: 0.875rem;
-  background: var(--color-accent) !important;
-  color: var(--color-text-inverse) !important;
-  border-color: var(--color-accent) !important;
+  background: #ffffff !important;
+  color: #111116 !important;
+  border-color: #ffffff !important;
   font-weight: 600;
 }
 
