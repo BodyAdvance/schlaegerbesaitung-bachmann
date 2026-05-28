@@ -258,6 +258,104 @@
       margin: var(--space-xl) 0;
     }
 
+    /* ── Discounts ── */
+    .price-discounts {
+      margin-top: var(--space-xl);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .price-discounts-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 900;
+      color: var(--color-white);
+      margin-bottom: var(--space-lg);
+      line-height: 1.1;
+    }
+
+    .price-discounts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+    }
+
+    .price-discount-card {
+      display: flex;
+      gap: var(--space-md);
+      padding: var(--space-lg);
+      background: var(--color-bg-elevated);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      transition: border-color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .price-discount-card:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .price-discount-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: rgba(206,136,179,0.12);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .price-discount-icon svg {
+      width: 22px;
+      height: 22px;
+      color: var(--color-accent);
+    }
+
+    .price-discount-body {
+      flex: 1;
+    }
+
+    .price-discount-label {
+      font-weight: 700;
+      color: var(--color-white);
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .price-discount-text {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .price-discount-cta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      padding: var(--space-lg);
+      background: rgba(206,136,179,0.06);
+      border-left: 3px solid var(--color-accent);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    .price-discount-cta p {
+      flex: 1;
+      margin: 0;
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .price-discount-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+      }
+    }
+
     /* ── Stand ── */
     .price-stand {
       color: var(--color-text-muted);
@@ -832,6 +930,57 @@
           </div>
 
         </div><!-- /panel-badminton -->
+
+        <!-- ══════════════════════════════════════════
+             RABATTE
+        ══════════════════════════════════════════ -->
+        <div class="price-discounts">
+          <p class="section-label" style="margin-bottom:0.75rem;">Sonderkonditionen</p>
+          <h2 class="price-discounts-title">Rabatte &amp; Vergünstigungen</h2>
+          <div class="price-discounts-grid">
+            <div class="price-discount-card">
+              <div class="price-discount-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="price-discount-body">
+                <div class="price-discount-label">Vereine &amp; Tennisschulen</div>
+                <p class="price-discount-text">Attraktive Konditionen für Clubs und Tennisschulen, die regelmäßig besaiten lassen — auf Anfrage individuell vereinbaren.</p>
+              </div>
+            </div>
+            <div class="price-discount-card">
+              <div class="price-discount-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <div class="price-discount-body">
+                <div class="price-discount-label">Marketingpartner (Spieler)</div>
+                <p class="price-discount-text">Spieler, die André Bachmann als Partner repräsentieren, erhalten besondere Rabatte auf alle Besaitungen — Partneranfragen willkommen.</p>
+              </div>
+            </div>
+            <div class="price-discount-card">
+              <div class="price-discount-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                  <polyline points="17 6 23 6 23 12"/>
+                </svg>
+              </div>
+              <div class="price-discount-body">
+                <div class="price-discount-label">Ab 10 Besaitungen pro Jahr</div>
+                <p class="price-discount-text">Wer mindestens 10 Schläger pro Jahr besaiten lässt, profitiert automatisch von Mengenrabatten — einfach nachfragen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="price-discount-cta">
+            <p>Interesse an einem dieser Angebote? Ich freue mich auf deine Anfrage.</p>
+            <a href="index.html#kontakt" class="btn btn-primary">Jetzt anfragen</a>
+          </div>
+        </div>
 
         <p class="price-stand">Stand: April 2026 · Preisänderungen vorbehalten</p>
 
